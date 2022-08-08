@@ -33,4 +33,22 @@ class DummyData {
       assetImage: 'assets/images/man.png',
     )
   ];
+  final List<Data> emoji = [
+    Data(
+      title: 'Happy',
+      assetImage: 'assets/images/happy1.png',
+    ),
+    Data(
+      title: 'Romantic',
+      assetImage: 'assets/images/love.png',
+    ),
+    Data(
+      title: 'Depressed',
+      assetImage: 'assets/images/happy1.png',
+    ),
+    Data(
+      title: 'Worried',
+      assetImage: 'assets/images/happy1.png',
+    ),
+  ];
 }
