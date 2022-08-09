@@ -51,4 +51,30 @@ class DummyData {
       assetImage: 'assets/images/happy1.png',
     ),
   ];
+  final List<Data> status = [
+    Data(
+      title: 'Happy',
+    ),
+    Data(
+      title: 'Romantic',
+    ),
+    Data(
+      title: 'Depressed',
+    ),
+    Data(
+      title: 'Fearful',
+    ),
+    Data(
+      title: 'Hopeless',
+    ),
+    Data(
+      title: 'Indifferent',
+    ),
+    Data(
+      title: 'Disgust',
+    ),
+    Data(
+      title: 'Shameful',
+    ),
+  ];
 }

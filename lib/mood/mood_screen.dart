@@ -32,10 +32,7 @@ class _MoodScreenState extends State<MoodScreen> {
           )
         ],
       ),
-      drawer: Padding(
-        padding: EdgeInsets.all(8.0),
-        child: AppDrawer(),
-      ),
+      drawer: const AppDrawer(),
       body: Padding(
         padding: const EdgeInsets.all(20.0),
         child: Column(

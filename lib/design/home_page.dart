@@ -31,12 +31,7 @@ class _HomePageState extends State<HomePage> {
           style: GoogleFonts.nunito(
               color: Colors.black, fontWeight: FontWeight.bold),
         ),
-        actions: const [
-          Padding(
-            padding: EdgeInsets.only(right: 20.0),
-            child: Icon(Icons.notifications),
-          )
-        ],
+        actions: const [Icon(Icons.notifications)],
       ),
       drawer: const AppDrawer(),
       body: Column(

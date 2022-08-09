@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ui/mood/mood_screen.dart';
+import 'package:ui/mood_list/mood_list.dart';
+import 'package:ui/video/video.dart';
 
 class AppDrawer extends StatelessWidget {
   const AppDrawer({Key? key}) : super(key: key);
@@ -21,7 +23,7 @@ class AppDrawer extends StatelessWidget {
           const Divider(),
           ListTile(
             leading: const Icon(Icons.home),
-            title: const Text('Home Page'),
+            title: const Text('Select Mood'),
             onTap: () {
               Navigator.push(
                   context,
@@ -32,10 +34,10 @@ class AppDrawer extends StatelessWidget {
           const Divider(),
           ListTile(
             leading: const Icon(Icons.star),
-            title: const Text('Popular'),
+            title: const Text('Mood List'),
             onTap: () {
-              // Navigator.push(context,
-              //     MaterialPageRoute(builder: ((context) => const TopNews())));
+              Navigator.push(context,
+                  MaterialPageRoute(builder: ((context) => const MoodList())));
               // Navigator.of(context)
               //     .pushReplacementNamed(OrdersScreen.routeName);
             },
@@ -43,10 +45,10 @@ class AppDrawer extends StatelessWidget {
           const Divider(),
           ListTile(
             leading: const Icon(Icons.exit_to_app),
-            title: const Text('Sign Up'),
+            title: const Text('Video Try'),
             onTap: () {
-              // Navigator.push(context,
-              //     MaterialPageRoute(builder: ((context) => const SignUp())));
+              Navigator.push(context,
+                  MaterialPageRoute(builder: ((context) => VideoApp())));
             },
           ),
           const Divider(),
