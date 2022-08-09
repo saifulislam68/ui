@@ -13,8 +13,9 @@ class AppDrawer extends StatelessWidget {
       child: Column(
         children: <Widget>[
           AppBar(
+            elevation: 5,
             title: Text(
-              'Category',
+              'Menu',
               style: GoogleFonts.lora(color: Colors.black),
             ),
             backgroundColor: Colors.white,
@@ -40,35 +41,6 @@ class AppDrawer extends StatelessWidget {
                   MaterialPageRoute(builder: ((context) => const MoodList())));
               // Navigator.of(context)
               //     .pushReplacementNamed(OrdersScreen.routeName);
-            },
-          ),
-          const Divider(),
-          ListTile(
-            leading: const Icon(Icons.exit_to_app),
-            title: const Text('Video Try'),
-            onTap: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: ((context) => VideoApp())));
-            },
-          ),
-          const Divider(),
-          ListTile(
-            leading: const Icon(Icons.login),
-            title: const Text('Sign In'),
-            onTap: () {
-              // Navigator.push(context,
-              //     MaterialPageRoute(builder: ((context) => const LoginPage())));
-            },
-          ),
-          const Divider(),
-          ListTile(
-            leading: const Icon(Icons.settings),
-            title: const Text('Settings'),
-            onTap: () {
-              // Navigator.push(
-              //     context,
-              //     MaterialPageRoute(
-              //         builder: ((context) => const SettingsScreen())));
             },
           ),
         ],
